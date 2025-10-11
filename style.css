@@ -1,55 +1,114 @@
+/* ===== RESET Y BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+/* ===== HEADER ===== */
 header {
-    background: #222;
-    color: #fff;
-    padding: 2rem 0;
-    text-align: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #0d1117;
+  color: #fff;
 }
 
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ===== NAV ===== */
 nav {
-    margin: 1rem 0;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: #161b22;
+  padding: 0.8rem 0;
 }
 
 nav a {
-    color: #222;
-    text-decoration: none;
-    margin: 0 1rem;
-    font-weight: bold;
-    transition: color 0.2s;
+  color: #e6edf3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #0078d7;
+  color: #58a6ff;
 }
 
-section {
-    max-width: 800px;
-    margin: 2rem auto;
-    background: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+/* ===== CONTENIDO ===== */
+main, section {
+  width: 90%;
+  max-width: 900px;
+  margin: 2rem auto;
 }
 
 h2 {
-    color: #222;
+  color: #0d1117;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.3rem;
 }
 
-.proyecto {
-    margin-bottom: 1.5rem;
+p {
+  margin-bottom: 1rem;
 }
 
+/* ===== BOTONES ===== */
+.btn {
+  display: inline-block;
+  background: #0d6efd;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0b5ed7;
+}
+
+/* ===== FOOTER ===== */
 footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: #222;
-    color: #fff;
-    margin-top: 2rem;
+  margin-top: auto;
+  background: #0d1117;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
