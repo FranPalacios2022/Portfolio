@@ -1,134 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francisco Palacios | Web Developer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francisco Palacios | Web Developer</title>
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Francisco Palacios</h1>
-        <p>WordPress Full-Stack Developer | Frontend & Backend | E-commerce & Plugins Personalizados</p>
-    </header>
 
-    <nav>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#formacion">Formación</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+  <!-- Header -->
+  <header class="bg-dark text-white text-center py-5">
+    <h1>Francisco Palacios</h1>
+    <p class="lead">WordPress Full-Stack Developer | Frontend & Backend | E-commerce & Plugins Personalizados</p>
+  </header>
 
-    <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>
-            Soy <strong>Desarrollador Web Full-Stack</strong> especializado en WordPress y e-commerce, con más de 3 años de experiencia profesional en desarrollo de sitios, plugins y automatizaciones, y más de 6 años de práctica en el área.
-            Combino un fuerte enfoque en <strong>frontend</strong> —UI/UX, diseño responsive y optimización de performance— con sólidas capacidades de <strong>backend</strong> (PHP, MySQL, programación orientada a objetos).
-        </p>
-        <p>
-            Manejo avanzado de <strong>HTML5, CSS3, JavaScript (ES6+), Elementor, JetEngine y WooCommerce</strong>. 
-            Tengo experiencia en integraciones mediante <strong>REST APIs</strong>, pipelines de despliegue y administración de servidores Linux.
-            Actualmente curso el 4° año de Ingeniería en Sistemas de Información (UTN-FRC) y busco oportunidades donde pueda seguir creciendo y aportando soluciones eficientes e innovadoras.
-        </p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="demostraciones.html">Demostraciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="mb-5">
+      <h2 class="mb-3">Sobre mí</h2>
+      <p>
+        Soy <strong>Desarrollador Web Full-Stack</strong> especializado en WordPress y e-commerce, con más de 3 años de experiencia profesional en desarrollo de sitios, plugins y automatizaciones.
+      </p>
+      <p>
+        Combino un enfoque fuerte en <strong>frontend</strong> —UI/UX, diseño responsive y optimización de performance— con un dominio sólido en <strong>backend</strong> (PHP, MySQL, APIs REST y programación orientada a objetos).
+      </p>
+      <p>
+        Actualmente formo parte de <strong>Be More Consultores</strong>, desarrollando proyectos personalizados, integraciones con APIs y automatizaciones de procesos.
+      </p>
     </section>
 
-    <section id="habilidades">
-        <h2>Habilidades Técnicas</h2>
-        <ul>
+    <!-- TECNOLOGÍAS -->
+    <section id="tecnologias" class="mb-5">
+      <h2 class="mb-3">Tecnologías</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
             <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+), Elementor, Crocoblock</li>
-            <li><strong>Backend:</strong> PHP, MySQL, SQLite, APIs REST, cronjobs</li>
-            <li><strong>E-commerce:</strong> WooCommerce, pasarelas de pago, automatizaciones</li>
-            <li><strong>DevOps:</strong> Git, WP-CLI, staging, migraciones, CI/CD, Linux</li>
-            <li><strong>Metodologías:</strong> Scrum, UML, PUD, patrones arquitectónicos</li>
-        </ul>
+            <li><strong>Backend:</strong> PHP, MySQL, SQLite, APIs REST</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li><strong>E-commerce:</strong> WooCommerce, integraciones, automatizaciones</li>
+            <li><strong>DevOps:</strong> Git, WP-CLI, staging, CI/CD, Linux</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="experiencia">
-        <h2>Experiencia Laboral</h2>
-
-        <div class="experiencia">
-            <h3>Be More Consultores - Córdoba, Argentina</h3>
-            <p><em>Enero 2024 – Actualidad</em></p>
-            <ul>
-                <li>Desarrollo y mantenimiento de sitios y tiendas online en WordPress con Elementor, JetEngine y WooCommerce.</li>
-                <li>Personalización avanzada de temas y plugins con PHP y JavaScript.</li>
-                <li>Implementación de integraciones externas mediante APIs REST y automatizaciones con cronjobs y WP-CLI.</li>
-                <li>Optimización de performance y seguridad.</li>
-                <li>Gestión de staging, migraciones y soporte técnico integral.</li>
-            </ul>
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="mb-5">
+      <h2 class="mb-3">Experiencia Laboral</h2>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h3>Be More Consultores - Córdoba, Argentina</h3>
+          <p><em>Enero 2024 – Actualidad</em></p>
+          <ul>
+            <li>Desarrollo y mantenimiento de sitios y tiendas online en WordPress.</li>
+            <li>Integraciones mediante APIs REST y automatizaciones con cronjobs.</li>
+            <li>Optimización de performance y staging.</li>
+          </ul>
         </div>
+      </div>
 
-        <div class="experiencia">
-            <h3>Desarrollador Web Freelance</h3>
-            <p><em>Mayo 2023 – Actualidad</em></p>
-            <ul>
-                <li>Desarrollo de soluciones personalizadas para gestión de stock en PYMEs locales.</li>
-                <li>Integración de sistemas con AFIP y otros servicios externos.</li>
-                <li>Automatización de procesos clave mediante Python y PHP, mejorando la eficiencia operativa.</li>
-            </ul>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h3>Desarrollador Freelance</h3>
+          <p><em>Mayo 2023 – Actualidad</em></p>
+          <ul>
+            <li>Soluciones personalizadas para PYMEs locales.</li>
+            <li>Integración de sistemas de gestión con AFIP y servicios externos.</li>
+          </ul>
         </div>
-
-        <div class="experiencia">
-            <h3>Atención al Cliente - Autónomo</h3>
-            <p><em>Sep. 2021 – Abril 2023</em></p>
-            <ul>
-                <li>Gestión de consultas de clientes y soporte técnico remoto.</li>
-                <li>Comunicación efectiva y resolución de incidencias.</li>
-            </ul>
-        </div>
+      </div>
     </section>
 
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-
-        <div class="proyecto">
-            <h3><a href="https://hamilton.com.ar" target="_blank">Hamilton</a></h3>
-            <p>Sitio corporativo desarrollado con WordPress, Elementor y funciones personalizadas en PHP/JS. Optimización de UI/UX y velocidad.</p>
-        </div>
-
-        <div class="proyecto">
-            <h3><a href="https://kuperherramientas.com.ar" target="_blank">Kuper Herramientas</a></h3>
-            <p>Tienda WooCommerce con plugins personalizados, automatizaciones y API REST para sincronización de productos.</p>
-        </div>
-
-        <div class="proyecto">
-            <h3><a href="https://amuchasteguiweb.com.ar" target="_blank">Amuchástegui</a></h3>
-            <p>Sitio inmobiliario optimizado para SEO y performance, con filtros personalizados y layouts dinámicos.</p>
-        </div>
-
-        <div class="proyecto">
-            <h3><a href="https://ispfull.com" target="_blank">ISP Full</a></h3>
-            <p>Sitio corporativo con backend personalizado e integración con sistemas de gestión interna.</p>
-        </div>
-
-        <div class="proyecto">
-            <h3><a href="https://setin.ar" target="_blank">Setin</a></h3>
-            <p>Sitio institucional responsive con enfoque en velocidad de carga y accesibilidad.</p>
-        </div>
+    <!-- PROYECTOS -->
+    <section id="resumen-proyectos" class="mb-5">
+      <h2 class="mb-3">Proyectos Destacados</h2>
+      <ul>
+        <li><a href="https://hamilton.com.ar" target="_blank">Hamilton</a> — Sitio corporativo WordPress + Elementor + PHP/JS.</li>
+        <li><a href="https://kuperherramientas.com.ar" target="_blank">Kuper Herramientas</a> — WooCommerce con plugins personalizados.</li>
+        <li><a href="https://amuchasteguiweb.com.ar" target="_blank">Amuchástegui</a> — Sitio inmobiliario optimizado para SEO.</li>
+      </ul>
+      <a href="proyectos.html" class="btn btn-primary mt-3">Ver todos los proyectos</a>
     </section>
 
-    <section id="formacion">
-        <h2>Formación Académica</h2>
-        <ul>
-            <li><strong>Universidad Tecnológica Nacional (UTN-FRC)</strong> – Ingeniería en Sistemas de Información (2019 - Actualidad)</li>
-            <li><strong>Coderhouse</strong> – Desarrollo Web (Jun. 2023 – Sep. 2023)</li>
-            <li><strong>Coderhouse</strong> – Ciberseguridad (Sep. 2023 – Nov. 2023)</li>
-        </ul>
-    </section>
-
+    <!-- CONTACTO -->
     <section id="contacto">
-        <h2>Contacto</h2>
-        <p><strong>📧 Email:</strong> <a href="mailto:frannp14@gmail.com">frannp14@gmail.com</a></p>
-        <p><strong>📞 Teléfono:</strong> (+54 9) 3582 41-3072</p>
-        <p><strong>🌐 LinkedIn:</strong> <a href="https://www.linkedin.com/in/francisco-palacios" target="_blank">linkedin.com/in/francisco-palacios</a></p>
-        <p><strong>📍 Ubicación:</strong> Córdoba, Argentina</p>
+      <h2 class="mb-3">Contacto</h2>
+      <p><strong>Email:</strong> <a href="mailto:frannp14@gmail.com">frannp14@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/francisco-palacios" target="_blank">linkedin.com/in/francisco-palacios</a></p>
+      <p><strong>Teléfono:</strong> (+54 9) 3582 41-3072</p>
+      <p><strong>Ubicación:</strong> Córdoba, Argentina</p>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Francisco Palacios. Todos los derechos reservados.</p>
-    </footer>
+  </main>
+
+  <footer class="bg-dark text-center text-white py-3">
+    <p>&copy; 2025 Francisco Palacios</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
