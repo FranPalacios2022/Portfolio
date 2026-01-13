@@ -112,3 +112,167 @@ footer {
     gap: 0.5rem;
   }
 }
+
+/* Miniaturas y modal */
+.project-thumb{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:8px;
+  box-shadow: 0 6px 16px rgba(15,23,42,0.06);
+  background: linear-gradient(180deg, #f8fbff, #eef7ff);
+}
+
+/* Ajuste cuando la tarjeta no tenga imagen */
+.project-card .project-thumb:empty{display:none}
+
+/* Modal image */
+#modalImg{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:8px;
+  margin-bottom:.5rem;
+}
+
+/* Pequeñas mejoras responsive */
+@media (max-width:767px){
+  .project-thumb{height:140px}
+  #modalImg{height:160px}
+}
+
+/* Variables CSS */
+:root{
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --blue-600: #2f80ed;
+  --blue-300: #9fd0ff;
+  --accent: #e6f2ff;
+  --shadow: 0 6px 18px rgba(31,41,55,0.06);
+  --radius: 12px;
+  --max-width: 1100px;
+  --navy: #0b2447;    /* azul marino */
+  --gold: #d4a72c;    /* dorado suave */
+  --header-height: 64px;
+}
+
+/* Header compacto, profesional y sticky */
+.site-header{
+  background: linear-gradient(180deg, var(--navy), #08203a);
+  color: #fff;
+  height: var(--header-height);
+  min-height: var(--header-height);
+  display: flex;
+  align-items: center;
+  padding: 0 .75rem;
+  box-shadow: 0 2px 8px rgba(3,10,25,0.12);
+  z-index: 1030; /* encima del contenido */
+}
+
+/* Marca */
+.brand-link{
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+.brand-name{
+  display:block;
+  font-weight:700;
+  font-size:1rem;
+  color:var(--gold); /* nombre en dorado */
+  line-height:1;
+}
+.brand-sub{
+  display:block;
+  font-size:.78rem;
+  color:rgba(255,255,255,0.85);
+  margin-top:2px;
+}
+
+/* Contacto pequeño */
+.contact-sm{font-size:.85rem}
+.contact-link{
+  color:rgba(255,255,255,0.9);
+  text-decoration:none;
+  font-weight:600;
+}
+.contact-link:hover{color:var(--gold); text-decoration:underline}
+.sep{color:rgba(255,255,255,0.45); margin:0 .45rem}
+
+/* Reduce espacio en pantallas pequeñas */
+@media (max-width:576px){
+  .brand-sub{display:none}
+  .contact-sm{font-size:.78rem}
+  :root{--header-height:56px}
+  .site-header{height:var(--header-height)}
+}
+
+/* Header */
+header.bg-dark{
+  background: linear-gradient(180deg, rgba(47,128,237,0.95), rgba(47,128,237,0.85));
+  color:#fff;
+  border-bottom-left-radius: 0 0;
+  border-bottom-right-radius: 0 0;
+  padding:3.5rem 1rem;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.05);
+}
+header h1{font-weight:700; margin-bottom:.25rem}
+header .lead{opacity:.95; font-weight:500}
+
+/* Navbar simplified, airy */
+.navbar{
+  background:linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.6));
+  box-shadow: none;
+  border-bottom: 1px solid rgba(15,23,42,0.04);
+  padding:.5rem 0;
+}
+.navbar-nav{gap:1rem; display:flex}
+.nav-link{
+  color:var(--blue-600);
+  padding:.4rem .75rem;
+  border-radius:8px;
+  transition:all .15s ease;
+  font-weight:600;
+  background:transparent;
+}
+.nav-link:hover{background:var(--accent); color:var(--blue-600); text-decoration:none}
+.nav-link.active{background:var(--blue-300); color:#042536}
+
+/* Sections */
+h2{color:#06253a; margin-bottom:.75rem}
+section{padding:0}
+
+/* Cards / Projects */
+.card{border:0; background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow)}
+.project-card .card-body{padding:1.15rem}
+.project-card .card-title a{
+  color:var(--blue-600);
+  text-decoration:none;
+  font-weight:700;
+}
+.project-card .card-text{color:var(--muted); margin-top:.45rem}
+
+/* Lists */
+ul{padding-left:1.25rem}
+a{color:var(--blue-600)}
+
+.btn-primary{
+  background:var(--blue-600);
+  border-color:var(--blue-600);
+  color:#fff;
+  border-radius:10px;
+  padding:.5rem .9rem;
+  box-shadow:none;
+}
+.btn-primary:hover{background:#256fd1; border-color:#256fd1}
+
+/* Footer */
+footer{background:#f1f5f9; color:#0f172a; padding:1rem 0; margin-top:2rem}
+footer p{margin:0; opacity:.8}
+
+/* Responsive tweaks */
+@media (max-width:767px){
+  header{padding:2.5rem 1rem}
+  .navbar-nav{flex-direction:column; align-items:center}
+}
